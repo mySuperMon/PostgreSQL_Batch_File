@@ -29,7 +29,7 @@ Step 5: In startStopRecording.bat file the start/stop functinality using start/s
 
 5.1 Configured all the details specified in config.json in start/stop batch file using this below code
 ```ruby
-more application_config.json | jq-win64.exe ".serviceUrl" >> temp.txt
+more config.json | jq-win64.exe ".serviceUrl" >> temp.txt
 set /p serviceUrl=<temp.txt
 del -f temp.txt
 ```
